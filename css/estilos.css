@@ -2,6 +2,13 @@
     padding: 0;
     margin: 0;
     font-family: 'interMedia';
+    color: #000;
+}
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0;
+}
+ul{
+    margin: 0;
 }
 body {
     background-color: rgb(255, 255, 255);
@@ -15,15 +22,15 @@ body {
 
 @font-face {
     font-family: "interReg";
-    src: url(./Inter/static/Inter-2.ttf);
+    src: url(../Inter/static/Inter-2.ttf);
 }
 @font-face {
     font-family: "interMedia";
-    src: url(./Inter/static/Inter-4.ttf);
+    src: url(../Inter/static/Inter-4.ttf);
 }
 @font-face {
     font-family: "interNegrita";
-    src: url(./Inter/static/Inter-6.ttf);
+    src: url(../Inter/static/Inter-6.ttf);
 }
 /* HEADER */
 header{
@@ -109,14 +116,14 @@ a{
 }
 
 main #flexNoticias{
-    display:flex ;
+    display: flex ;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     overflow: hidden;
 }
 #noticiaPpal{
-    background-image: url(../proyecto/imagenes/aredit.jpeg);
+    background-image: url(../imagenes/aredit.jpeg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: 100vw;
@@ -147,6 +154,7 @@ main #flexNoticias{
     font-size: 30px;
     text-align: left;
     max-width: fit-content;
+    color: white;
 }
 .imagen{
     position: relative;
@@ -172,6 +180,8 @@ main #flexNoticias{
 }
 .textoSus{
     font-family: 'interMedia';
+    height: fit-content;
+    margin: 0;
 }
 
 #seccionSuscribite h2{
@@ -194,19 +204,23 @@ main #flexNoticias{
     padding: 15px;
     border-radius: 10px;
 }
-#nom{
+
+#nomb{
     grid-area: nombre;
+    color: white;
 }
 #ingreseN{
     grid-area: ingreseN;
 }
 #ape{
     grid-area: apellido;
+    color: white;
 }
 #ingreseA{
     grid-area: ingreseA;
 }
 #correo{
+    color: white;
     grid-area: correo;
 }
 #ingreseC{
@@ -233,8 +247,8 @@ main #flexNoticias{
     color: white;
 }
 input{
-    height: 20px;
-    width: 200px;
+    height: 25px;
+    width: 250px;
     padding: 5px;
     border-style: none;
     background-color: #ffffff;
@@ -302,7 +316,8 @@ footer{
     border-top: hidden;
     border-left: hidden;
     border-right: hidden;
-    border-bottom: 2px0 white;
+    border-bottom: 2;
+    border-color: white;
 }
 #titFooter{
     grid-area: titF;
@@ -326,13 +341,14 @@ footer div li a{
 .derechos{
     text-align: center;
     grid-area: derechos;
+    color: #ffffff;
 }
 
 /* NOT0 */
 
 .esqueletoNoticia{
     display: grid ;
-    grid-template-rows: 14vh 140vh 27vh;
+    grid-template-rows: 14vh 150vh 27vh;
     grid-template-areas: "header "
     "mainNot "
     "footer ";
@@ -340,7 +356,7 @@ footer div li a{
 .mainNoticia{
     display: grid;
     grid-area: mainNot;
-    grid-template-rows: 10% 45% 45%;
+    grid-template-rows: 16% 42% 42%;
     grid-template-columns: 47% 47%;
     grid-template-areas: "tituloNot tituloNot"
     "foto texto1"
@@ -353,14 +369,15 @@ footer div li a{
     grid-area: tituloNot;
     font-size: 40px;
     justify-self: center;
+    text-align: center;
     font-family: 'interNegrita';
 }
 .textoNot{
     display: flex;
     align-items: center;
     text-align: justify;
-    margin: 25px;
-    max-width: 600px;
+    max-width: 650px;
+    margin: 10px;
     font-size: 20px;
 }
 #texto1{
@@ -370,9 +387,10 @@ footer div li a{
     grid-area: texto2;
 }
 .mascherano{
+    margin: 15px;
     grid-area: foto;
     max-width: 600px;
-    max-height: 800px;
+    max-height: 350px;
     border-radius: 5px;
     object-fit: cover;
 }
