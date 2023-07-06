@@ -1,0 +1,4 @@
+cuando clickeo en suscribite en el menu desplegable no se cierra
+el boton a la seccionSuscribite tarda en reaccionar
+no estoy podiendo usar las ramas y los checkouts (cuando intento hacer un cambio en una rama nueva y volver a la master, los cambios se hacen en ambas ramas)
+como hacer para que cada pagina tenga un tamaño de main adecuado a su contenido y no sobre espacio en blanco.
