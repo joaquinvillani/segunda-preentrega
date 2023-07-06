@@ -13,12 +13,17 @@ ul{
 body {
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 14vh 2300px 27vh;
+    grid-template-rows: 18vh 2300px 27vh;
     grid-template-areas: "header"
     "main"
     "footer";
 }
 
+a{
+    text-decoration: none;
+    list-style-type:none;
+    color: #000000;
+}
 
 @font-face {
     font-family: "interReg";
@@ -38,8 +43,8 @@ header{
     display: flex;
     justify-content: center;
     background-color: rgb(255, 255, 255);
-    height: 14vh;
-    width: 100vw;
+    height: 18vh;
+    width: 100%;
     position: fixed;
     z-index: 100;
     border-style: solid;
@@ -49,45 +54,54 @@ header{
     border-right: hidden;
     box-shadow: 0px 1px 7px rgb(137, 137, 137);
 }
-header section{
+.flexSection{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.flexHeader{
     width: 85vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    
 }
-header section nav ul{
-    width: 50vw;
+#lista {
+    margin: 0;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style: none;
 }
-.lista a{
+#lista li a{
     color: rgb(0, 0, 0);
     font-family: 'interMedia';   
     font-size: 20px;
     transition: 0.2s;
 }
-header div nav ul li a:hover{
+#lista li a:hover{
     background-color: rgb(144, 144, 144);
     color: white;
     border-radius: 5px;
     padding: 2px;
 }
+.navbar-toggler{
+    border: none;
+    outline-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #tit{
     font-style: italic;
     color: rgba(236, 35, 35, 1);
     font-family: 'interNegrita';
-    font-size: 70px;
+    font-size: 400%;
     text-shadow: -2px 2px 4px rgb(0, 0, 0);
+    text-decoration: none;
 }
 /* HEADER */
-a{
-    text-decoration: none;
-    list-style-type:none;
-    color: #000000;
-}
+
 
 .mainIndex { 
     grid-area: main;
@@ -114,7 +128,9 @@ a{
     font-size: 15px;
     line-height: 150%;
 }
-
+main{
+    grid-area: main;
+}
 main #flexNoticias{
     display: flex ;
     flex-wrap: wrap;
@@ -247,9 +263,9 @@ main #flexNoticias{
     color: white;
 }
 input{
-    height: 25px;
-    width: 250px;
-    padding: 5px;
+    height: 70%;
+    width: 100%;
+    padding: 1%;
     border-style: none;
     background-color: #ffffff;
     border-radius: 5px;
@@ -259,8 +275,8 @@ input:hover{
     transform: scale(1.1);
 }
 button{
-    width: 70px;
-    height: 30px;
+    width: 40%;
+    height: 70%;
     border-style: none;
     border-radius: 5px;
     justify-self: center;
@@ -291,27 +307,31 @@ section iframe{
 }
 footer{
     display: grid;
-    grid-template-rows: 93% 7%;
+    grid-template-rows: 80% 20%;
     grid-template-areas: "cont"
     "derechos";
-    justify-content: center;
     grid-area: footer;
+    justify-items: center;
+    width: 100%;
     height: 27vh;
     background-color: #444444;
     color: white;
     font-family: 'interMedia';
     z-index: 20;
 }
+/* #flexFooter{
+    width: 100%;
+} */
 #contFooter{
     grid-area: cont;
     display: grid;
     justify-content: center;
     text-align: center;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 50% 50%;
     grid-template-areas: "titF redes";
     align-items: center;
-    width: 70vw;
-    height: 160px ;
+    width: 60%;
+    height: 100% ;
     border-style:solid ;
     border-top: hidden;
     border-left: hidden;
@@ -322,14 +342,12 @@ footer{
 #titFooter{
     grid-area: titF;
     font-style: italic;
-    height: 61.35%;
     color: rgba(236, 35, 35, 1);
     font-family: 'interNegrita';
-    font-size: 70px;
+    font-size: 400%;
 }
 #redes{
     width: 100%;
-    height: 18.4%;
     display: flex;
     justify-content: space-evenly;
     grid-area: redes;
@@ -346,17 +364,18 @@ footer div li a{
 
 /* NOT0 */
 
+
 .esqueletoNoticia{
     display: grid ;
-    grid-template-rows: 14vh 150vh 27vh;
-    grid-template-areas: "header "
-    "mainNot "
-    "footer ";
+    grid-template-rows: 18vh 150vh 27vh;
+    grid-template-areas: "header"
+    "mainNot"
+    "footer";
 }
 .mainNoticia{
     display: grid;
     grid-area: mainNot;
-    grid-template-rows: 16% 42% 42%;
+    grid-template-rows: 14% 44% 42%;
     grid-template-columns: 47% 47%;
     grid-template-areas: "tituloNot tituloNot"
     "foto texto1"
@@ -399,33 +418,138 @@ footer div li a{
 }
 
 /* NACIONAL E INTERNACIONAL */
+.bodyNac {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 18vh 1600px 27vh;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+}
+.bodyInt {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 18vh 1320px 27vh;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+}
 
 .sectNacional{
     background-color: #898989;
     color: white;
     border-radius: 10px;
-    max-height: 400px;
-    margin: 30px;
+    max-height: 100%;
+    /* margin: 30px 10 30px 0; */
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    align-items: center;
+}
+#collapseExample{
+    max-height: 350px;
+}
+#contenedorTextoNac{
+    max-height: 100%;
+    padding: 2%;
 }
 .textoNac{
     display: flex;
     align-items: center;
     text-align: justify;
-    margin: 15px;
     line-height: 150%;
-
+    margin: 0;
 }
 /* PROXIMAMENTE */
 .proxi{
     display: flex;
     justify-content: center;
-    top: 250px;
+    align-items: flex-start;
     font-size: 50px;
+    height: 100%;
 }
-.abajo{
-    position: relative;
-    top: 454px;
+
+#verMas button{
+    width: 100%;
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    margin: 0;
+
+}
+
+@media screen and (max-device-width: 576px) {
+    #esqueletoNoticia{
+        display: grid ;
+        grid-template-rows: 18vh 200vh 27vh;
+        grid-template-areas: "header"
+        "mainNot"
+        "footer";
+    }
+    .mainNoticia{
+        display: grid;
+        grid-area: mainNot;
+        grid-template-rows: 14% 21% 21% 21% 21%;
+        grid-template-columns: 100%;
+        grid-template-areas: "tituloNot"
+        "foto"
+        "texto1"
+        "video"
+        "texto2";
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    footer{
+    display: grid;
+    grid-template-rows: 80% 20%;
+    grid-template-areas: "cont"
+    "derechos";
+    grid-area: footer;
+    justify-items: center;
+    width: 100%;
+    height: 27vh;
+    background-color: #444444;
+    color: white;
+    font-family: 'interMedia';
+    z-index: 20;
+}
+/* #flexFooter{
+    width: 100%;
+} */
+#contFooter{
+    grid-area: cont;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "titF redes";
+    align-items: center;
+    width: 60%;
+    height: 100% ;
+    border-style:solid ;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: 2;
+    border-color: white;
+}
+#titFooter{
+    grid-area: titF;
+    font-style: italic;
+    color: rgba(236, 35, 35, 1);
+    font-family: 'interNegrita';
+    font-size: 300%;
+}
+
+.sectNacional{
+    background-color: #898989;
+    color: white;
+    border-radius: 10px;
+    max-height: 100%;
+    margin: 30px 10 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 }

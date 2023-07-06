@@ -4,30 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <title>SportX</title>
     <link rel="icon" type="image/png" href="../favicon_io/favicon-32x32.png">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="esqueletoNoticia">
     <header>
-        <section>
-            <div>
-                <h1><a href="../index..html" id="tit">SportX</a></h1>
-            </div>
-            <div class="lista">
-                <nav>
-                    <ul>
-                        <li><a href="../index..html">Home</a></li>
-                        <li><a href="./Nacionales.html">Nacionales</a></li>
-                        <li><a href="./Internacionales.html">Internacionales</a></li>
-                        <li><a href="../index..html#seccionSuscribite">¡Suscribite!</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <section class="flexSection">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid flexHeader">
+                    <a id="tit" href="../index..html">SportX</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="tit">SportX</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul id="lista" class="navbar-nav me-auto mb-2 mb-lg-0 flexHeader">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index..html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Nacionales.html">Nacionales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Internacionales.html">Internacionales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index..html#seccionSuscribite" >¡Suscribite!</a>
+                                </li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </section>
-    </header>
-    
+    </header>    
     <main class="mainNoticia">
         <h2 class="tituloNot">Denver Nuggets venció a Miami Heat, por el juego 3 de las Finales de la NBA 2023: reviví lo mejor</h2>
         <img class="mascherano" src="../imagenes/jokic.jpg" alt="">
@@ -35,7 +51,7 @@
             <p class="textoNot">
                 Esta vez los Nuggets ganaron por 15 puntos en lugar de por 11. Lo hicieron por un 109-94 que le hace justicia a lo observado durante gran parte de los 48 minutos.
                 Nikola Jokic y Jamal Murray hicieron una actuación histórica en dupla, con un triple-doble de 32 puntos, 21 rebotes y 10 asistencias del serbio y otro de 34 tantos, 10 rebotes y 10 asistencias del canadiense.
-                Entre ambos encestaron un 50% en sus triples y más del 50% de sus tiros de campo, pero no con eso solamente se quedó Denver. Aaron Gordon volvió a ser el jugador agresivo del Partido 1.
+                Entre ambos encestaron un 50% en sus triples y más del 50% de sus tiros de campo.
             </p>
             <img class="mascherano" src="../imagenes/print.png" alt="resultado">
         </div>

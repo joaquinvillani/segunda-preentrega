@@ -4,27 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <title>SportX</title>
     <link rel="icon" type="image/png" href="../favicon_io/favicon-32x32.png">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="esqueletoNoticia">
     <header>
-        <section>
-            <div>
-                <h1><a href="../index..html" id="tit">SportX</a></h1>
-            </div>
-            <div class="lista">
-                <nav>
-                    <ul>
-                        <li><a href="../index..html">Home</a></li>
-                        <li><a href="./Nacionales.html">Nacionales</a></li>
-                        <li><a href="./Internacionales.html">Internacionales</a></li>
-                        <li><a href="../index..html#seccionSuscribite">¡Suscribite!</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <section class="flexSection">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid flexHeader">
+                    <a id="tit" href="../index..html">SportX</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="tit">SportX</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul id="lista" class="navbar-nav me-auto mb-2 mb-lg-0 flexHeader">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index..html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Nacionales.html">Nacionales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Internacionales.html">Internacionales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index..html#seccionSuscribite" >¡Suscribite!</a>
+                                </li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </section>
     </header>
     <main class="mainNoticia">
