@@ -139,17 +139,22 @@ main #flexNoticias{
     align-items: center;
     overflow: hidden;
 }
-#noticiaPpal{
-    background-image: url(../imagenes/aredit.jpeg);
-    background-repeat: no-repeat;
-    background-position: left;
+
+#noticiaPpal {
+    background: linear-gradient(to top, rgb(0, 0, 0) 40%,  rgba(0, 0, 0, 0));
     background-size: 100vw;
     color: rgb(255, 255, 255);
     max-width: 100vw;
     height: 500px;
     padding: 10px;
     margin: 10px 0 10px 0;
-    transition: 0.5s
+    transition: 0.5s;
+}
+#fondoDeTxt{
+    background-image: url(../imagenes/ar.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
 }
 #noticiaPpal:hover{
     transform: scale(1.02);
@@ -407,10 +412,11 @@ footer{
     grid-area: texto2;
 }
 .mascherano{
+    object-fit: cover;
     margin: 15px;
     grid-area: foto;
-    max-width: 600px;
-    max-height: 350px;
+    width: 44vw;
+    height: 54vh;
     border-radius: 5px;
     object-fit: cover;
 }
@@ -422,15 +428,20 @@ footer{
 .bodyNac {
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 18vh 1600px 27vh;
+    grid-template-rows: 18vh 200vh 27vh;
     grid-template-areas: "header"
     "main"
     "footer";
 }
+.gridNac{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
 .bodyInt {
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 18vh 1320px 27vh;
+    grid-template-rows: 18vh 200vh 27vh;
     grid-template-areas: "header"
     "main"
     "footer";
@@ -442,22 +453,44 @@ footer{
     border-radius: 10px;
     max-height: 100%;
     /* margin: 30px 10 30px 0; */
-    display: flex;
+    display: grid;
+    grid-template-columns: 48% 52% ;
+    grid-template-areas: "fot noti";
     align-items: center;
+    justify-items: center;
+}
+#sect1 img{
+    grid-area: fot;
+}
+#sect1 div{
+    grid-area: noti;
+}
+#sect2 img{
+    grid-area: fot;
+}
+#sect2 div{
+    grid-area: noti;
+}
+#sect3 img{
+    grid-area: fot;
+}
+#sect3 div{
+    grid-area: noti;
 }
 #collapseExample{
     max-height: 350px;
 }
-#contenedorTextoNac{
-    max-height: 100%;
-    padding: 2%;
-}
 .textoNac{
-    display: flex;
-    align-items: center;
     text-align: justify;
     line-height: 150%;
     margin: 0;
+}
+#contenedorTextoNac{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 54vh;
+    padding: 2%;
 }
 /* PROXIMAMENTE */
 .proxi{

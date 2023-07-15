@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sportx-Nacionales</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
@@ -46,11 +46,12 @@
         </section>
     </header>
     <main>
-            <section class="sectNacional">
+        <div class="gridNac">
+            <section id="sect1" class="sectNacional">
                 <img class=" mascherano" src="../imagenes/quimsaNac.jpg" alt="Quimsa">
                 <div >
                     <p id="verMas" class="d-lg-none">
-                        <button  class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                        <button  class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
                             Ver más
                         </button>
                     </p>
@@ -66,11 +67,11 @@
                     </div>
                 </div>
             </section>
-            <section class="sectNacional">
+            <section id="sect2" class="sectNacional">
                 <img class="mascherano" src="../imagenes/nacBoca.jpg" alt="lesionados Boca">
                 <div >
                     <p id="verMas" class="d-lg-none">
-                        <button  class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                        <button  class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
                             Ver más
                         </button>
                     </p>
@@ -84,29 +85,31 @@
                                 <br><br>
                                 Luis Advíncula: El polinfuncional peruano sintió un fuerte dolor en la parte posterior de la rodilla derecha y se confirmó que sufrió una lesión de grado II en el ligamento lateral externo. 
                                 <br><br>
-                                Frank Fabra: El lateral colombiano sufrió un desgarro de grado II en el isquiotibial izquierdo.</p>       
+                                Frank Fabra: El lateral colombiano sufrió un desgarro de grado II en el isquiotibial izquierdo.
+                            </p>       
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sect3" class="sectNacional">
+                <img class="mascherano" src="../imagenes/scalo.jpg" alt="lesionados Boca">
+                <div >
+                    <p id="verMas" class="d-lg-none">
+                        <button  class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                            Ver más
+                        </button>
+                    </p>
+                    <div class="col-12 collapse d-lg-block" id="collapseExample3">
+                        <div id="contenedorTextoNac" class="card card-body" >
+                            <p class="textoNac">Lionel Scaloni, entrenador de la Selección Argentina, emprendió viaje a Beijing para la próxima fecha FIFA y adelantó que la "expectativa es ver a algunos chicos que vienen por primera vez", mientras que aseguró que no le preocupa el cambio de clubes de algunas de sus figuras y aclaró por qué   no convocó a Franco Armani.
+                            <br><br>
+                            "Los jugadores van a estar hasta que me digan lo contrario. Franco no está porque no llegaría hasta el día anterior al partido. No tiene mucho sentido traerlo. Lo conozco muy bien, sé lo que puede dar él. Para nada está afuera de la Selección".
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
-        <section class="sectNacional">
-            <img class="mascherano" src="../imagenes/scalo.jpg" alt="lesionados Boca">
-            <div >
-                <p id="verMas" class="d-lg-none">
-                    <button  class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
-                        Ver más
-                    </button>
-                </p>
-                <div class="col-12 collapse d-lg-block" id="collapseExample3">
-                    <div class="card card-body" id="contenedorTextoNac">
-                        <p class="textoNac">Lionel Scaloni, entrenador de la Selección Argentina, emprendió viaje a Beijing para la próxima fecha FIFA y adelantó que la "expectativa es ver a algunos chicos que vienen por primera vez", mientras que aseguró que no le preocupa el cambio de clubes de algunas de sus figuras y aclaró por qué no convocó a Franco Armani.
-                            <br><br>
-                            "Los jugadores van a estar hasta que me digan lo contrario. Franco no está porque no llegaría hasta el día anterior al partido. No tiene mucho sentido traerlo. Lo conozco muy bien, sé lo que puede dar él. Para nada está afuera de la Selección".
-                        </p>
-                    </div>
-                </div>
-            </div>
+        </div>
     </main>
     <footer>
         <div id="contFooter">
