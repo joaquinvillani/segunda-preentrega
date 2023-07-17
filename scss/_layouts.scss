@@ -1,0 +1,206 @@
+body {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 18vh 2300px 27vh;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+}
+.mainIndex { 
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 550px 600px 300px 850px;
+    height: 2300px;
+}
+main{
+    grid-area: main;
+}
+main #flexNoticias{
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+.esqueletoNoticia{
+    display: grid ;
+    grid-template-rows: 18vh 150vh 27vh;
+    grid-template-areas: "header"
+    "mainNot"
+    "footer";
+}
+.mainNoticia{
+    display: grid;
+    grid-area: mainNot;
+    grid-template-rows: 14% 44% 42%;
+    grid-template-columns: 47% 47%;
+    grid-template-areas: "tituloNot tituloNot"
+    "foto texto1"
+    "texto2 video";
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+#texto1{
+    grid-area: texto1;
+}
+#texto2{
+    grid-area: texto2;
+}
+
+.video{
+    grid-area: video;
+}
+#seccionSuscribite{
+    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 29.2% 29.2% 29.2%;
+    grid-template-areas: 
+    "h2 h2 caja"
+    "txt1 txt1 caja"
+    "txt2 txt2 caja";
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 35, 35, 1);
+    box-shadow: 0 5px 60px rgb(70, 70, 70);
+    line-height: 180%;
+    h2{
+    grid-area: h2;
+    }
+}
+#seccionSuscribite #txt1{
+    grid-area: txt1;
+}
+#seccionSuscribite #txt2{
+    grid-area: txt2;
+}
+#nomb{
+    grid-area: nombre;
+    color: white;
+}
+#ingreseN{
+    grid-area: ingreseN;
+}
+#ape{
+    grid-area: apellido;
+    color: white;
+}
+#ingreseA{
+    grid-area: ingreseA;
+}
+#correo{
+    color: white;
+    grid-area: correo;
+}
+#ingreseC{
+    grid-area: ingreseC;
+}
+#boton{
+    grid-area: boton;
+}
+#datos{
+    display: grid;
+    grid-template-rows: 10% 17% 10% 17% 10% 17% 19%;
+    grid-template-areas: 
+    "nombre"
+    "ingreseN"
+    "apellido"
+    "ingreseA"
+    "correo"
+    "ingreseC"
+    "boton";
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    color: white;
+}
+#videosSemana{
+    display: grid;
+    grid-template-rows: 10% 45% 45%;
+    font-size: 20px;
+    div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+}
+.seccionVideos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+section iframe{
+    width: 35.2%;
+    margin: 30px;
+}
+.bodyNac {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 18vh 200vh 27vh;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+}
+.gridNac{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.bodyInt {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 18vh 200vh 27vh;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+}
+
+.sectNacional{
+    background-color: #898989;
+    color: white;
+    border-radius: 10px;
+    max-height: 100%;
+    /* margin: 30px 10 30px 0; */
+    display: grid;
+    grid-template-columns: 48% 52% ;
+    grid-template-areas: "fot noti";
+    align-items: center;
+    justify-items: center;
+}
+#sect1 img{
+    grid-area: fot;
+}
+#sect1 div{
+    grid-area: noti;
+}
+#sect2 img{
+    grid-area: fot;
+}
+#sect2 div{
+    grid-area: noti;
+}
+#sect3 img{
+    grid-area: fot;
+}
+#sect3 div{
+    grid-area: noti;
+}
+#collapseExample{
+    max-height: 350px;
+}
+.pagVacia{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 18vh 55vh 27vh;
+    grid-template-areas: "header"
+    "main"
+    "footer";}
+.proxi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    height: 100%;
+}

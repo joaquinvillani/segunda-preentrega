@@ -1,0 +1,56 @@
+footer{
+    display: grid;
+    grid-template-rows: 80% 20%;
+    grid-template-areas: "cont"
+    "derechos";
+    grid-area: footer;
+    justify-items: center;
+    width: 100%;
+    height: 27vh;
+    background-color: #444444;
+    color: white;
+    font-family: 'interMedia';
+    z-index: 20;
+    div li a{
+    margin: 20px;
+    }
+}
+/* #flexFooter{
+    width: 100%;
+} */
+#contFooter{
+    grid-area: cont;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "titF redes";
+    align-items: center;
+    width: 60%;
+    height: 100% ;
+    border-style:solid ;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: 2;
+    border-color: white;
+}
+#titFooter{
+    grid-area: titF;
+    font-style: italic;
+    color: rgba(236, 35, 35, 1);
+    font-family: 'interNegrita';
+    font-size: 400%;
+}
+#redes{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: redes;
+}
+
+.derechos{
+    text-align: center;
+    grid-area: derechos;
+    color: #ffffff;
+}
