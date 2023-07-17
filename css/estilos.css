@@ -77,6 +77,9 @@ main #flexNoticias {
 #texto1 {
   grid-area: texto1;
 }
+#texto1 img {
+  max-width: 100%;
+}
 
 #texto2 {
   grid-area: texto2;
