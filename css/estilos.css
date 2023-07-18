@@ -34,15 +34,16 @@ a {
 body {
   background-color: rgb(255, 255, 255);
   display: grid;
-  grid-template-rows: 18vh 2300px 27vh;
+  grid-template-rows: 18vh 340vh 27vh;
   grid-template-areas: "header" "main" "footer";
 }
 
 .mainIndex {
   grid-area: main;
   display: grid;
-  grid-template-rows: 85vh 92.5vh 46.1vh 130.8vh;
-  height: 354.4vh;
+  grid-template-rows: 85vh 80vh 45vh 130vh;
+  /*     height: 354.4vh;
+   */
 }
 
 main {
@@ -535,7 +536,7 @@ button:hover {
   margin: 0;
 }
 
-@media screen and (max-device-width: 1171px) {
+@media screen and (max-device-width: 576px) {
   body {
     background-color: rgb(255, 255, 255);
     display: grid;
