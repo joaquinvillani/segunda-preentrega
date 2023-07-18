@@ -41,8 +41,8 @@ body {
 .mainIndex {
   grid-area: main;
   display: grid;
-  grid-template-rows: 550px 600px 300px 850px;
-  height: 2300px;
+  grid-template-rows: 85vh 92.5vh 46.1vh 130.8vh;
+  height: 354.4vh;
 }
 
 main {
@@ -57,7 +57,7 @@ main #flexNoticias {
   overflow: hidden;
 }
 
-.esqueletoNoticia {
+.esqueletoNoticia0, .esqueletoNoticia1, .esqueletoNoticia2, .esqueletoNoticia3 {
   display: grid;
   grid-template-rows: 18vh 150vh 27vh;
   grid-template-areas: "header" "mainNot" "footer";
@@ -104,43 +104,34 @@ main #flexNoticias {
 #seccionSuscribite h2 {
   grid-area: h2;
 }
-
 #seccionSuscribite #txt1 {
   grid-area: txt1;
 }
-
 #seccionSuscribite #txt2 {
   grid-area: txt2;
 }
-
-#nomb {
+#seccionSuscribite #cajaSus #datos #nomb {
   grid-area: nombre;
   color: white;
 }
-
-#ingreseN {
+#seccionSuscribite #cajaSus #datos #ingreseN {
   grid-area: ingreseN;
 }
-
-#ape {
+#seccionSuscribite #cajaSus #datos #ape {
   grid-area: apellido;
   color: white;
 }
-
-#ingreseA {
+#seccionSuscribite #cajaSus #datos #ingreseA {
   grid-area: ingreseA;
 }
-
-#correo {
+#seccionSuscribite #cajaSus #datos #correo {
   color: white;
   grid-area: correo;
 }
-
-#ingreseC {
+#seccionSuscribite #cajaSus #datos #ingreseC {
   grid-area: ingreseC;
 }
-
-#boton {
+#seccionSuscribite #cajaSus #datos #boton {
   grid-area: boton;
 }
 
@@ -397,7 +388,7 @@ footer div li a {
 .texto {
   font-family: "interReg";
   color: #565656;
-  font-size: 15px;
+  font-size: 70%;
   line-height: 150%;
 }
 
@@ -406,7 +397,7 @@ footer div li a {
   background-size: 100vw;
   color: rgb(255, 255, 255);
   max-width: 100vw;
-  height: 500px;
+  height: 77.1vh;
   padding: 10px;
   margin: 10px 0 10px 0;
   transition: 0.5s;
@@ -545,20 +536,177 @@ button:hover {
 }
 
 @media screen and (max-device-width: 576px) {
-  #esqueletoNoticia {
+  body {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 18vh 449vh 27vh;
+    grid-template-areas: "header" "main" "footer";
+  }
+  .mainIndex {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 85vh 170vh 55vh 139vh;
+  }
+  #noticiaPpal {
+    background: linear-gradient(to top, rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0));
+    background-size: 100vw;
+    color: rgb(255, 255, 255);
+    max-width: 100vw;
+    height: 77.1vh;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    transition: 0.5s;
+  }
+  #noticiaPpal:hover {
+    transform: scale(1.02);
+  }
+  #subtit {
+    position: relative;
+    top: 270px;
+    max-width: 80vw;
+    margin: 10px;
+    max-width: fit-content;
+    font-size: 70px;
+    font-family: "interNegrita";
+  }
+  #cont {
+    position: relative;
+    max-width: 80vw;
+    margin: 10px;
+    top: 280px;
+    font-size: 25px;
+    text-align: left;
+    max-width: fit-content;
+    color: white;
+  }
+  main #flexNoticias {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .noticia {
+    border-style: none;
+    border-color: black;
+    width: 70%;
+    height: 83.3333%;
+    text-align: left;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  #seccionSuscribite {
+    height: 55vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 29.2% 29.2% 29.2%;
+    grid-template-areas: "h2 h2 h2" "caja caja caja" "caja caja caja";
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 35, 35);
+    box-shadow: 0 5px 60px rgb(70, 70, 70);
+    line-height: 180%;
+  }
+  #seccionSuscribite h2 {
+    grid-area: h2;
+  }
+  #seccionSuscribite #txt1 {
+    grid-area: txt1;
+    display: none;
+  }
+  #seccionSuscribite #txt2 {
+    grid-area: txt2;
+    display: none;
+  }
+  #seccionSuscribite #cajaSus {
+    align-content: center;
+    grid-area: caja;
+    justify-self: center;
+    width: 80%;
+    height: 85%;
+    background-color: #000;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  #seccionSuscribite #cajaSus #datos #nomb {
+    grid-area: nombre;
+    color: white;
+  }
+  #seccionSuscribite #cajaSus #datos #ingreseN {
+    grid-area: ingreseN;
+  }
+  #seccionSuscribite #cajaSus #datos #ape {
+    grid-area: apellido;
+    color: white;
+  }
+  #seccionSuscribite #cajaSus #datos #ingreseA {
+    grid-area: ingreseA;
+  }
+  #seccionSuscribite #cajaSus #datos #correo {
+    color: white;
+    grid-area: correo;
+  }
+  #seccionSuscribite #cajaSus #datos #ingreseC {
+    grid-area: ingreseC;
+  }
+  #seccionSuscribite #cajaSus #datos #boton {
+    grid-area: boton;
+  }
+  #videosSemana {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    font-size: 20px;
+  }
+  #videosSemana div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .seccionVideos {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    justify-items: center;
+  }
+  .seccionVideos iframe {
+    width: 150%;
+  }
+  .esqueletoNoticia0 {
     display: grid;
     grid-template-rows: 18vh 200vh 27vh;
+    grid-template-areas: "header" "mainNot" "footer";
+  }
+  .esqueletoNoticia1 {
+    display: grid;
+    grid-template-rows: 18vh 230vh 27vh;
+    grid-template-areas: "header" "mainNot" "footer";
+  }
+  .esqueletoNoticia2 {
+    display: grid;
+    grid-template-rows: 18vh 230vh 27vh;
+    grid-template-areas: "header" "mainNot" "footer";
+  }
+  .esqueletoNoticia3 {
+    display: grid;
+    grid-template-rows: 18vh 230vh 27vh;
     grid-template-areas: "header" "mainNot" "footer";
   }
   .mainNoticia {
     display: grid;
     grid-area: mainNot;
-    grid-template-rows: 14% 21% 21% 21% 21%;
+    grid-template-rows: 12% 21% 23% 21% 23%;
     grid-template-columns: 100%;
     grid-template-areas: "tituloNot" "foto" "texto1" "video" "texto2";
     align-items: center;
     justify-content: center;
     justify-items: center;
+  }
+  .mascherano {
+    object-fit: cover;
+    margin: 15px;
+    grid-area: foto;
+    width: 100vw;
+    height: 40vh;
+    border-radius: 5px;
+    object-fit: cover;
   }
   footer {
     display: grid;
